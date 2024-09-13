@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    h1, span {
+        @apply font-poppins
+    }
+    
+}
+
+@layer components {
+    .fontSize-SubTitle {
+        @apply text-[25px] md:text-[30px] xl:text-[40px];
+    }
+}
+
+.hamburger-active > i {
+    @apply rotate-45
+
+}
+

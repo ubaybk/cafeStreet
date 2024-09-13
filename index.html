@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html class="scroll-smooth focus:scroll-auto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/asset/img/logoWeb1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Cafe Street</title>
+</head>
+
+<body>
+    <div class="w-full mx-auto relative ">
+        <div class="w-full flex bg-primary justify-between p-5 md:hidden">
+            <div class="w-[30%]">
+                <img src="/asset/img/logo_coffe.png" alt="">
+            </div>
+            <div class="relative">
+                <i id="menu-toggle" class="fas fa-bars cursor-pointer transition-transform duration-300"></i>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="absolute hidden flex-col items-center bg-white rounded-xl text-secondary z-50 right-2 top-14 p-3  ">
+            <div class="flex flex-col gap-5">
+                <a href="#about-us" class="hover:underline">About Us</a>
+                <a href="#menu" class="hover:underline">Our Product</a>
+                <a href="#delivery" class="hover:underline">Delivery</a>
+
+            </div>
+        </div>
+        
+
+
+        <!-- web nav -->
+        <nav class=" fixed top-0 left-0 w-full bg-primary bg-opacity-80  justify-between px-8 py-2 hidden md:flex  z-50">
+            <div class="">
+                <img src="/asset/img/logo_coffe.png" alt="">
+            </div>
+            <div class="flex justify-center items-center  md:gap-3 xl:gap-10">
+                <a href="#about-us" class="relative inline-block group">
+                    <h1 class="font-semibold">About Us</h1>
+                    <span
+                        class="absolute inset-x-0 bottom-0 h-[4px] bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+                </a>
+                <a href="#menu" class="relative inline-block group">
+                    <h1 class="font-semibold">Our Product</h1>
+                    <span
+                        class="absolute inset-x-0 bottom-0 h-[4px] bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+                </a>
+                <a href="#delivery" class="relative inline-block group">
+                    <h1 class="font-semibold">Delivery</h1>
+                    <span
+                        class="absolute inset-x-0 bottom-0 h-[4px] bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+                </a>
+            </div>
+
+            <div class="flex justify-center gap-1">
+                <div class="flex">
+                    <img class="bg-white p-1 rounded-s-full" src="/asset/img/akar-icons_search.png" alt="">
+                    <input type="text" class="rounded-e-full pl-1 outline-none" placeholder="search">    
+                </div>
+                <a href=""><img src="/asset/img/icons_cart.png" alt=""></a>
+            </div>
+
+        </nav>
+
+
+        <main>
+            <!-- start hero -->
+            <section id="top-up" class="grid grid-cols-1 gap-8 justify-center items-center md:grid-cols-2 md:bg-primary md:gap-10 relative md:py-16 lg:py-16 xl:py-12 ">
+                <img class="bg-primary" src="/asset/img/img-hero.png" alt="">
+                <div class="text-center px-5 md:text-left md:py-4 z-20 xl:leading-loose">
+                    <h1 class="text-[48px] font-bold md:text-[25px] leading-tight xl:text-[50px]  ">Enjoy your <span
+                            class="text-secondary">coffee</span> before
+                        your activity</h1>
+                    <h1 class="text-[25px] md:text-[15px]"> Boost your productivity and build your mood with a glass of coffee in the
+                        morning </h1>
+
+                    <div class="flex justify-center  mt-5 lg:justify-start xl:justify-start xl:gap-16">
+                        <button
+                            class="text-secondary font-bold border-2 border-gray-300 hover:bg-[#2F2105] hover:text-white px-8 py-3 rounded-full mr-6 md:text-[15px]  ">Order
+                            now</button>
+                        <button
+                            class="text-secondary font-bold border-2  border-gray-300 hover:bg-[#2F2105] hover:text-white px-8 py-3 rounded-full md:text-[15px]">More
+                            menu</button>
+                    </div>
+                </div>
+                <div class="absolute w-48 top-0 right-0 md:w-[400px] opacity-70  z-0">
+                    <img src="/asset/img/bg_img_hero.png" alt="">
+                </div>
+
+            </section>
+            <!-- end hero -->
+        </main>
+
+
+        <!-- start Navbar -->
+        <!-- <div>
+                <h1 class="hidden md:flex">bayu</h1>
+             </div> -->
+
+
+
+        <!-- end Navbar -->
+
+
+        <main class="mt-20 ">
+            <!-- START POPULAR -->
+            <section class="mt-9 bg-[#F9D9AA] p-8 rounded-2xl">
+                <h1 class="font-semibold mb-4 fontSize-SubTitle">Popular <span
+                        class=" underline decoration-orange-500">Now</span></h1>
+                <div class="md:flex md:justify-between md:gap-3 xl:px-32">
+                    <div class="p-6 flex justify-center bg-white rounded-lg shadow-lg mb-6 hover:scale-95 ">
+                        <div class="">
+                            <img src="/asset/img/populer/1.png" alt="">
+                            <div class="flex justify-between text-[24px] md:text-[17px] px-2">
+                                <h1 class="font-semibold ">Vanilla Latte</h1>
+                                <h1 class="font-bold">21 K</h1>
+                            </div>
+                            <div class="flex items-center justify-between px-2">
+                                <div class="flex">
+                                    <h1 class="border border-secondary text-center px-2 rounded-md text-secondary mr-5 hover:bg-primary">
+                                        Hot
+                                    </h1>
+                                    <h1 class="border border-secondary text-center px-2 rounded-md text-secondary hover:bg-primary">Cold
+                                    </h1>
+                                </div>
+                                <div>
+                                    <img class="bg-orange-500 rounded-full p-2" src="/asset/img/populer/keranjang.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 flex justify-center bg-white rounded-lg shadow-lg mb-6 hover:scale-95">
+                        <div class="">
+                            <img src="/asset/img/populer/2.png" alt="">
+                            <div class="flex justify-between text-[24px] md:text-[17px] px-2">
+                                <h1 class="font-semibold">Espresso</h1>
+                                <h1 class="font-bold">12 K</h1>
+                            </div>
+                            <div class="flex items-center justify-between px-2">
+                                <div class="flex">
+                                    <h1 class="border border-secondary text-center px-2 rounded-md text-secondary mr-5 hover:bg-primary">
+                                        Hot
+                                    </h1>
+                                    <h1 class="border border-secondary text-center px-2 rounded-md text-secondary hover:bg-primary">Cold
+                                    </h1>
+                                </div>
+                                <div>
+                                    <img class="bg-orange-500 rounded-full p-2" src="/asset/img/populer/keranjang.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 flex justify-center bg-white rounded-lg shadow-lg mb-6 hover:scale-95">
+                        <div class="">
+                            <img src="/asset/img/populer/3.png" alt="">
+                            <div class="flex justify-between text-[24px] md:text-[17px] px-2">
+                                <h1 class="font-semibold">Hazelnut</h1>
+                                <h1 class="font-bold">23 K</h1>
+                            </div>
+                            <div class="flex items-center justify-between px-2">
+                                <div class="flex">
+                                    <h1 class="border border-[#FF902B] text-center px-2 rounded-md text-[#FF902B] mr-5 hover:bg-primary">
+                                        Hot
+                                    </h1>
+                                    <h1 class="border border-[#FF902B] text-center px-2 rounded-md text-[#FF902B] hover:bg-primary">Cold
+                                    </h1>
+                                </div>
+                                <div>
+                                    <img class="bg-orange-500 rounded-full p-2" src="/asset/img/populer/keranjang.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- END POPULAR -->
+
+            <!-- START HOW TO USE -->
+            <section id="delivery" class="mt-9 p-8 ">
+                <div class="text-center md:text-left mb-6">
+                    <h1 class="font-bold fontSize-SubTitle">How to use delivery <span
+                            class="underline  decoration-orange-500">service</span> </h1>
+                </div>
+                <div class="flex flex-col gap-4 md:flex-row md:gap-35 md:justify-center xl:gap-48">
+                    <a href="" class="hover:bg-secondary rounded-3xl p-2 hover:scale-75">
+                        <div class="flex flex-col justify-center items-center">
+                            <img src="/asset/img/how to use/1.png" alt="">
+                            <h2 class="font-semibold text-[20px]"> choose your coffee</h2>
+                            <h2> there are 20+ coffees for you</h2>
+                        </div>
+                    </a>
+                    <a href="" class="hover:bg-secondary rounded-3xl p-2 hover:scale-75">
+                        <div class="flex flex-col justify-center items-center">
+                            <img src="/asset/img/how to use/2.png" alt="">
+                            <h2 class="font-semibold text-[20px]"> we delivery it to you</h2>
+                            <h2>Choose delivery service</h2>
+                        </div>
+
+                    </a>
+                    <a href="" class="hover:bg-secondary rounded-3xl p-2 hover:scale-75">
+                        <div class="flex flex-col justify-center items-center">
+                            <img src="/asset/img/how to use/3.png" alt="">
+                            <h2 class="font-semibold text-[20px]"> Enjoy your coffee</h2>
+                            <h2>Choose delivery service</h2>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- END HOW TO USE -->
+
+            <!-- START ABOUT US -->
+            <section id="about-us" class="w-auto mt-9 bg-[#F9D9AA] p-5 rounded-2xl text-center md:flex md:text-left">
+                <h1 class="font-semibold fontSize-SubTitle mb-4 md:hidden">About <span
+                        class="underline decoration-orange-500">us</span>
+                </h1>
+                <div class="md:flex md:gap-3">
+                    <div class=" flex justify-center items-center md:w-[100%] ">
+                        <img class=" w-[90%] md:w-fit border-8 border-white rounded-md"
+                            src="/asset/img/about us/Group 6.png" alt="">
+                    </div>
+
+                    <div class="md:flex md:flex-col md:justify-center md:">
+                        <h1 class="font-bold fontSize-SubTitle mb-4 hidden md:block ">About <span
+                                class="underline decoration-orange-500">us</span>
+                        </h1>
+                        <h1 class="text-[27px] font-semibold">We provide quality coffee, and ready to deliver.</h1>
+                        <p class="text-[18px] text-[#7E7D7A]">We are a company that makes and distributes delicious
+                            drinks. our main product is made with a secret recipe and available in stores worldwide.
+                        </p>
+                        <div class="mt-3">
+                            <button
+                                class="bg-[#2F2105] rounded-full px-8 py-2 text-[#F4AE26] font-bold hover:text-secondary hover:bg-white   hover:border-gray-300">Get
+                                your
+                                coffe</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </section>
+            <!-- END ABOUT US -->
+
+            <!-- START SPESIAL MENU -->
+            <section id="menu" class="mt-9 p-5 ">
+                <h1 class="font-bold fontSize-SubTitle"> Spesial menu for you</h1>
+                <div class="grid grid-cols-1 gap-3 mt-5 md:grid md:grid-cols-3 md:justify-center md:items-center">
+                    <div class="shadow-2xl rounded-2xl p-2 gap-2 flex flex-col justify-center py-5 hover:scale-90">
+                        <img src="/asset/img/spesial menu/img_product.png" alt="">
+                        <div class="flex justify-between px-3 font-semibold text-[21px] md:text-[15px]">
+                            <h1>Sandwich</h1>
+                            <h1>12 K</h1>
+                        </div>
+                        <div class="flex justify-between items-center px-3  ">
+                            <div class="">
+                                <h1 class="font-semibold text-xl md:text-[13px] text-gray-400">bread with meat </h1>
+                            </div>
+                            <img class="bg-orange-500 rounded-full p-2 " src="/asset/img/populer/keranjang.png" alt="">
+                        </div>
+                    </div>
+                    <div class="shadow-2xl rounded-2xl p-2 gap-2 flex flex-col justify-center py-5 hover:scale-90">
+                        <img src="/asset/img/spesial menu/img_product2.png" alt="">
+                        <div class="flex justify-between px-3 font-semibold text-[21px] md:text-[15px]">
+                            <h1>Hot Milk</h1>
+                            <h1>12 K</h1>
+                        </div>
+                        <div class="flex justify-between items-center px-3  ">
+                            <div class="">
+                                <h1 class="font-semibold text-xl md:text-[13px] text-gray-400">Hot Milk with less sugar
+                                </h1>
+                            </div>
+                            <img class="bg-orange-500 rounded-full p-2 " src="/asset/img/populer/keranjang.png" alt="">
+                        </div>
+                    </div>
+                    <div class="shadow-2xl rounded-2xl p-2 gap-2 flex flex-col justify-center py-5 hover:scale-90">
+                        <img src="/asset/img/spesial menu/img_product3.png" alt="">
+                        <div class="flex justify-between px-3 font-semibold text-[21px] md:text-[15px]">
+                            <h1>Coffe Ice Cream</h1>
+                            <h1>12 K</h1>
+                        </div>
+                        <div class="flex justify-between items-center px-3  ">
+                            <div class="">
+                                <h1 class="font-semibold text-xl md:text-[13px] text-gray-400">Coffe with ice cream</h1>
+                            </div>
+                            <img class="bg-orange-500 rounded-full p-2 " src="/asset/img/populer/keranjang.png" alt="">
+                        </div>
+                    </div>
+                    <div class="shadow-2xl rounded-2xl p-2 gap-2 flex flex-col justify-center py-5 hover:scale-90">
+                        <img src="/asset/img/spesial menu/img_product4.png" alt="">
+                        <div class="flex justify-between px-3 font-semibold text-[21px] md:text-[15px]">
+                            <h1>Cappucino</h1>
+                            <h1>12 K</h1>
+                        </div>
+                        <div class="flex justify-between items-center px-3  ">
+                            <div class="">
+                                <h1 class="font-semibold text-xl md:text-[13px] text-gray-400">Hot Cappucino</h1>
+                            </div>
+                            <img class="bg-orange-500 rounded-full p-2 " src="/asset/img/populer/keranjang.png" alt="">
+                        </div>
+                    </div>
+                    <div class="shadow-2xl rounded-2xl p-2 gap-2 flex flex-col justify-center py-5 hover:scale-90">
+                        <img src="/asset/img/spesial menu/img_product5.png" alt="">
+                        <div class="flex justify-between px-3 font-semibold text-[21px] md:text-[15px]">
+                            <h1>Moccacinno</h1>
+                            <h1>12 K</h1>
+                        </div>
+                        <div class="flex justify-between items-center px-3  ">
+                            <div class="">
+                                <h1 class="font-semibold text-xl md:text-[13px] text-gray-400">Hot Moccacino </h1>
+                            </div>
+                            <img class="bg-orange-500 rounded-full p-2 " src="/asset/img/populer/keranjang.png" alt="">
+                        </div>
+                    </div>
+                    <div class="shadow-2xl rounded-2xl p-2 gap-2 flex flex-col justify-center py-5 hover:scale-90">
+                        <img src="/asset/img/spesial menu/img_product6.png" alt="">
+                        <div class="flex justify-between px-3 font-semibold text-[21px] md:text-[15px]">
+                            <h1>Waffle Ice Crem</h1>
+                            <h1>12 K</h1>
+                        </div>
+                        <div class="flex justify-between items-center px-3  ">
+                            <div class="">
+                                <h1 class="font-semibold text-xl md:text-[13px] text-gray-400">Wafle with Ice cream</h1>
+                            </div>
+                            <img class="bg-orange-500 rounded-full p-2 " src="/asset/img/populer/keranjang.png" alt="">
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </section>
+            <!-- END SPESIAL MENU -->
+
+            <!-- START WHAT THE SAY -->
+            <section class="p-5 bg-[#F9D9AA] mt-9 rounded-2xl">
+                <div>
+                    <div class="text-center mb-5">
+                        <h1 class="font-semibold fontSize-SubTitle">What the say about us</h1>
+                        <h1 class="text-[#7E7D7A]">We always provide the best service and always maintain the quality of
+                            coffee</h1>
+                    </div>
+                    <div class="flex justify-between items-center gap-4 xl:justify-center xl:gap-44">
+                        <div class="relative ">
+
+                            <img class="border-2 border-yellow-700 rounded-2xl" src="/asset/img/whatThe/2.png" alt="">
+
+                            <div class="absolute w-full h-11 py-1 bottom-0 text-[8px] text-center bg-yellow-600 px-1">
+                                <h1>Bayu</h1>
+                                <h1>I really love the cappucino</h1>
+                            </div>
+                        </div>
+                        <div class="relative">
+
+                            <img class="border-2 border-yellow-700 rounded-2xl" src="/asset/img/whatThe/1.png" alt="">
+
+                            <div class="absolute w-full h-11 py-1 bottom-0 text-[8px] text-center bg-yellow-600 px-1">
+                                <h1>Jackson</h1>
+                                <h1>this coffee shop is very convenient</h1>
+                            </div>
+                        </div>
+                        <div class="relative">
+
+                            <img class="border-2 border-yellow-700 rounded-2xl" src="/asset/img/whatThe/3.png" alt="">
+
+                            <div class="absolute w-full h-11 py-1 bottom-0 text-[8px] text-center bg-yellow-600 px-1">
+                                <h1>Bayu</h1>
+                                <h1>this coffee shop is very convenient</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END WHAT THE SAY -->
+
+            <!-- start subscribe -->
+            <section class="py-10">
+                <div
+                    class="bg-[url('/asset/img/subscribe/1.png')] w-[100%] h-[200px] bg-cover rounded-2xl bg-center flex justify-center items-center md:w-full md:h-96 ">
+                    <div class=" text-center flex flex-col gap-4 justify-center items-center">
+                        <h1 class="text-white font-semibold fontSize-SubTitle text-[20px]">Subscribe to get 50% discount price</h1>
+                        <div class="rounded-xl relative flex items-center w-[50%]">
+                            <input class="rounded-2xl w-[100%] py-2 pl-4 px-2 outline-none text-[10px]" type="text" class="" placeholder="Email address">
+                            <button
+                                class="bg-[#2F2105] mr-1 px-3 py-1  rounded-full absolute right-0 text-[9px] text-white">Order
+                                now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- end subscribe -->
+
+        </main>
+
+
+        <a href="#top-up" class="fixed bottom-5 right-5 bg-white p-3 rounded-full shadow-lg cursor-pointer">
+            <i class="fa-solid fa-angles-up text-2xl text-black"></i>
+        </a>
+        
+        <footer class="w-full h-full" >
+            <div class="grid grid-cols-1 bg-black px-3 py-8 gap-4 lg:grid-cols-2">
+                <div class="flex flex-col gap-4 ">
+                    <div class="flex justify-around">
+                        <img class="w-[70px] h-[80px]" src="/asset/img/footer/logo-BrandOfThe.png" alt="">
+                        <img class="w-[70px] h-[80px]" src="/asset/img/footer/logo-halal.png" alt="">
+
+                    </div>
+                    <div class="text-center mb-3">
+                        <h1 class="text-white text-[12px]">Hak Cipta  @2024 PT Ubay Cofe</h1>
+                    </div>
+                    <div class="text-white">
+                        <h1 class="underline font-semibold mb-2">OUR LOCATION</h1>
+                        <p>Jl. BSD Raya Utama Lantai LG, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15339</p>
+                    </div>
+                </div>
+                
+                
+                <div class="order-2">
+                    <iframe class="w-full h-64 rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.689456831118!2d106.64303149999999!3d-6.3044705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e4b2daee657b%3A0xec54989de95a8006!2sCafe%20Street!5e0!3m2!1sid!2sid!4v1725976357411!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+                
+                
+            </div>
+            <div class="bg-black py-8">
+                <hr class="border-t-4 border-white w-full mb-1">
+                <h1 class="text-white italic text-[10px] px-2">Copyright <span class="text-secondary">Bayu Kurniawan</span></h1>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
